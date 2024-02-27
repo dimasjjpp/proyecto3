@@ -98,6 +98,15 @@ navContainer.innerHTML = `
 //projectSection
 //contactSection
 
+//menu desplegable
+document.addEventListener('DOMContentLoaded', function () {
+  const menuFold = document.querySelector('#menu-icon')
+  const linksMenu = document.querySelector('#links')
+  menuFold.addEventListener('click', function () {
+    linksMenu.classList.toggle('hidden')
+  })
+})
+
 document.addEventListener('DOMContentLoaded', function () {
   const experienceLink = document.querySelector('#nav-experience')
   experienceLink.addEventListener('click', function (event) {
